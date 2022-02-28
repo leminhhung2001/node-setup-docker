@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Docker compose demo</title>
+  </head>
+  <body>
+    <h1>Course</h1>
+    <ul id="courseContainer"></ul>
+    <script type="text/javascript">
+      const url = "http://localhost:5001";
+      // const url = "http://course-service";
+      fetch(url)
+        .then((res) => res.json())
+        .then((data) => {
+          let courses = data.courses;
+          let courseListContent = "";
+          courses.forEach((course) => {
+            courseListContent += `<li>${course}</li>`;
+          });
+          document.getElementById("courseContainer").innerHTML =
+            courseListContent;
+        })
+        .catch((err) => console.log(err));
+    </script>
+  </body>
+</html>
