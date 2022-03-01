@@ -22,7 +22,7 @@ $ sudo apt-get install \
 $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
 ```
 
-##### 3. Use the following command to set up the stable repository. To add the **nightly** or **test** repository, add the word **nightly** or test (or both) after the word **stable** in the commands below.
+#### 3. Use the following command to set up the stable repository. To add the **nightly** or **test** repository, add the word **nightly** or test (or both) after the word **stable** in the commands below.
 
 ```bash
   $ echo \
@@ -32,7 +32,7 @@ $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -
 
 ### Install Docker Engine
 
-##### 1. Update the `apt` package index
+#### 1. Update the `apt` package index
 
 ```bash
   $ sudo apt-get update
@@ -64,7 +64,7 @@ $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -
     <img src="/course-service/public/images/node_app_running.png">
 </div>
 
-#### 4. Run mutiple container to interact with other by using `docker-compose`
+#### 4. Run multiple container to interact with other by using `docker-compose`
 
 ```bash
   $ docker-compose up -d
