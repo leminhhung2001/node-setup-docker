@@ -44,7 +44,7 @@ $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -
   $ sudo sudo apt-get install docker-ce docker-ce-cli containerd.io
 ```
 
-## II. Set up docker environment
+## II. Execute docker
 
 #### 1. Create a image from docker file
 
