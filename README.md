@@ -46,13 +46,13 @@ $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -
 
 ## II. Execute docker
 
-#### 1. Create a image from docker file
+#### 1. Create an image from docker file
 
 ```bash
   $ docker build -t your-node-app:your_tag
 ```
 
-#### 2. Run image to create container
+#### 2. Run an image to create container
 
 ```bash
   $ docker run -p 5001:8080 your-node-app:your_tag
